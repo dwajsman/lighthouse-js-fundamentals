@@ -7,7 +7,7 @@
 // If the number is a multiple of both 3 and 4, print the string "LoopyLighthouse" instead of the number.
 // By print, we are referring to console.log.
 
-for (i = 100; i <= 200; i++) {
+for (let i = 100; i <= 200; i++) {
 
   if ((i % 3 == 0) && (i % 4 == 0)) {
     console.log("LoopyLighthouse");
