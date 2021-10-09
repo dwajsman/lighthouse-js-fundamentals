@@ -8,23 +8,39 @@ const stations = [
   ['Moose Mountain Community Centre', 45, 'community centre']
 ];
 
-// my code
+// // my code
+// function chooseStations(array) {
+//   let results = [];
+//   for (let index = 0; index < array.length; index++) {
+//     const element = array[index];
+//     if (element[1] >= 20) {
+//       if (element[2] == "school" || element[2] == "community centre") {
+//         results.push(element[0]);
+//       }
+//     }
+//   }
+//   //console.log(results);
+//   return results;
+// }
 
-function chooseStations(array) {
-let results = [];
-for (let index = 0; index < array.length; index++) {
-  const element = array[index];
+
+const chooseStations = function (array) {
+  // Your code in here ...
+  let results = [];
+  for (let index = 0; index < array.length; index++) {
+    const element = array[index];
     if (element[1] >= 20) {
-      if (element[2] == "school" || element[2] ==  "community centre") {
-          results.push(element[0]);
+      if (element[2] == "school" || element[2] == "community centre") {
+        results.push(element[0]);
       }
     }
+  }
+  //console.log(results);
+  return results;
 }
-  console.log(results);
-}
-
 
 
 // function call
 chooseStations(stations);
 // outcome should be: ['Bright Lights Elementary', 'Moose Mountain Community Centre']
+
